@@ -1,0 +1,30 @@
+# Une fois que tu as créé ton dépôt sur GitHub
+# Et que tu as installé tous les utilitaires
+# (Toutes les commandes suivantes devront être lancée dans ton répertoire de travail avec Git Bash)
+
+# 1 - Tu initialises ton dépôt local
+$ git init
+
+# 2 - Tu ajoutes l'URL vers ton dépôt distant (GitHub)
+$ git remote add origin git@github.com:br1o/Basics.git
+
+# 3 - Tu récupère les modifications distantes
+$ git pull origin master
+
+# 4 - Tu ajoutes toutes tes modifications locales
+$ git add .
+
+# 5 - Tu commit le tout
+$ git commit -m"Ajout des sources de Basics"
+
+# 6 - Tu pousses tes commits vers le dépôt distant (GitHub)
+$ git push origin master
+
+# Normalement, tout devrait bien se passer si tu suis cette procédure.
+# A tout moment, tu peux utiliser cette commande pour voir l'état de ton dépôt local :
+$ git status
+
+# A chaque fois que tu auras des modifications que tu souhaites commiter :
+$ git add mon_fichier_1.php mon_fichier_2.php ...
+$ git commit -m"Mon super message de commit"
+$ git push origin master
